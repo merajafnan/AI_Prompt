@@ -77,7 +77,26 @@ const Nav = () => {
                  onClick={() => settoggleDropdown ((prev) => (!prev))}
                  > 
                  My Profile
-                 </Link>
+                 </Link> 
+
+                 <Link 
+                 href="/create-prompt"
+                 className="dropdown_link"
+                 onClick={() => settoggleDropdown ((prev) => (!prev))}
+                 > 
+                 create-prompt
+                 </Link> 
+
+                 <button 
+                  type="button" 
+                  onClick={() => { 
+                    settoggleDropdown ((prev) => (!prev)); 
+                    signOut; } }
+                  className="mt-5 w-full black_btn"
+                  >
+                    Sign Out
+                  </button>
+
               </div>
             )}
           </div>
