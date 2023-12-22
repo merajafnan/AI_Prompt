@@ -1,12 +1,14 @@
 import '@styles/globals.css';
 import { Children } from 'react';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
     title: "ai_prompt",
     description: 'Discover And Share AI Prompt'
 } 
 
-const Root = () => {
+const RootLayout = ({children}) => {
     return (
         <html lang='en'>
             <body>
@@ -14,11 +16,12 @@ const Root = () => {
                     <div className='gradient'/>
                 </div>
                 <main className='app'>
-                    {Children}
+                    <Nav />
+                    {children}
                 </main>
             </body>
         </html>
     )
 }
 
-export default Root
+export default RootLayout;   
