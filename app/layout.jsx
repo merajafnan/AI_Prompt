@@ -9,8 +9,8 @@ export const metadata = {
 } 
 
 const RootLayout = ({children}) => {
-    return (
-        <html lang='en'>
+    return(
+    <html lang='en'>
             <body>
                 <Provider>
                     <div className='main'>
@@ -26,4 +26,6 @@ const RootLayout = ({children}) => {
     )
 }
 
-export default RootLayout;   
+
+
+export default RootLayout; 
